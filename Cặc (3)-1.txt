@@ -1,4 +1,4 @@
---// This file was created by XHider https://discord.gg/infinityscript
+
 
 	do
 		ply = game.Players
@@ -11570,7 +11570,11 @@ end)
 			end)
 		end)
 	end)
-	Window:SelectTab(1)
+	Window:SelectTab(11)
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local Players = game:GetService("Players")
+	if World3 then
+		Tabs.Main:AddSection("fishing")
 	local Chest = Tabs.Main:AddToggle("fishing", {
 		Title = "fishing",
 		Description = "",
